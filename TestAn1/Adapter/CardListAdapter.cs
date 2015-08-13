@@ -64,9 +64,7 @@ namespace TestAn1
                 var editName = cViwe.FindViewById<TextView>(Resource.Id.text_CardName);
                 editName.Text = cardList[position].NAME;
                 var editDate = cViwe.FindViewById<TextView>(Resource.Id.text_RegDate);
-                editDate.Text = cardList[position].REGDATE;
-
-                cViwe.Click += CViwe_Click;
+                editDate.Text = cardList[position].REGDATE;                
 
             }
             catch (Exception e)
@@ -77,10 +75,6 @@ namespace TestAn1
             return cViwe;
 
         }
-
-        private void CViwe_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

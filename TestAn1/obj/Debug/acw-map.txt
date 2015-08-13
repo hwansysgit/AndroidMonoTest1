@@ -10,6 +10,10 @@ TestAn1.CreateAccountActivity, TestAn1;md50a88cf89e12d6f205bcda4a22bce17c5.Creat
 TestAn1.CreateAccountActivity, TestAn1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50a88cf89e12d6f205bcda4a22bce17c5.CreateAccountActivity
 TestAn1.CreateAccountActivity;md50a88cf89e12d6f205bcda4a22bce17c5.CreateAccountActivity
 testan1.CreateAccountActivity;md50a88cf89e12d6f205bcda4a22bce17c5.CreateAccountActivity
+TestAn1.CardViewerActivity, TestAn1;md50a88cf89e12d6f205bcda4a22bce17c5.CardViewerActivity
+TestAn1.CardViewerActivity, TestAn1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50a88cf89e12d6f205bcda4a22bce17c5.CardViewerActivity
+TestAn1.CardViewerActivity;md50a88cf89e12d6f205bcda4a22bce17c5.CardViewerActivity
+testan1.CardViewerActivity;md50a88cf89e12d6f205bcda4a22bce17c5.CardViewerActivity
 TestAn1.MainActivity, TestAn1;md50a88cf89e12d6f205bcda4a22bce17c5.MainActivity
 TestAn1.MainActivity, TestAn1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50a88cf89e12d6f205bcda4a22bce17c5.MainActivity
 TestAn1.MainActivity;md50a88cf89e12d6f205bcda4a22bce17c5.MainActivity

@@ -55,6 +55,7 @@
     <Compile Include="Adapter\CardListAdapter.cs" />
     <Compile Include="Activities\CardListViewActivity.cs" />
     <Compile Include="Activities\CreateAccountActivity.cs" />
+    <Compile Include="Activities\CardViewerActivity.cs" />
     <Compile Include="Contoller\DataBaseController.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -74,6 +75,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddNewCard.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CardViewer.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

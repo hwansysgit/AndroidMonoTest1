@@ -34,3 +34,4 @@ D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\res\values\strings.xml
 D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\res\drawable\icon.png
 D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\R.cs.flag
 D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\uploadflags.txt
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\res\layout\cardviewer.xml

@@ -36,9 +36,19 @@ namespace TestAn1
             cardViwer = FindViewById<GridView>(Resource.Id.grid_CardList);
             btn_AddCard = FindViewById<Button>(Resource.Id.btn_AddCard);
             btn_AddCard.Click += Btn_AddCard_Click;
-
+            cardViwer.ItemClick += CardViwer_ItemClick;
             GetList();
 
+        }
+
+        private void CardViwer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            string selectedName = e.View.FindViewById<TextView>(Resource.Id.text_CardName).Text;
+            byte[] image = DataBaseController.instance().GetCardImage(selectedName);
+
+            Intent cardViewIntent = new Intent(this, typeof(CardViewerActivity));
+            cardViewIntent.PutExtra("ImageData", image);
+            StartActivity(cardViewIntent);
         }
 
         private void Btn_AddCard_Click(object sender, EventArgs e)

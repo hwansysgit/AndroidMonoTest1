@@ -4,6 +4,7 @@
   <application android:label="TestAn1" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:label="CardListViewActivity" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.CardListViewActivity" />
     <activity android:label="CreateAccountActivity" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.CreateAccountActivity" />
+    <activity android:label="CardViewerActivity" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.CardViewerActivity" />
     <activity android:label="Secret Card Manager" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
