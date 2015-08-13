@@ -65,8 +65,8 @@ namespace TestAn1
 			// aapt resource value: 0x7f05000a
 			public const int CardImageViewer = 2131034122;
 			
-			// aapt resource value: 0x7f050000
-			public const int ImageViewer = 2131034112;
+			// aapt resource value: 0x7f050002
+			public const int ImageViewer = 2131034114;
 			
 			// aapt resource value: 0x7f050007
 			public const int btn_AddCard = 2131034119;
@@ -83,11 +83,11 @@ namespace TestAn1
 			// aapt resource value: 0x7f050012
 			public const int btn_Login = 2131034130;
 			
-			// aapt resource value: 0x7f050002
-			public const int btn_Save = 2131034114;
-			
 			// aapt resource value: 0x7f050001
-			public const int edit_Name = 2131034113;
+			public const int btn_Save = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int edit_Name = 2131034112;
 			
 			// aapt resource value: 0x7f050011
 			public const int edit_Password = 2131034129;

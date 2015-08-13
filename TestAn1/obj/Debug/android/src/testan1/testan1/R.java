@@ -15,14 +15,14 @@ public final class R {
     }
     public static final class id {
         public static final int CardImageViewer=0x7f05000a;
-        public static final int ImageViewer=0x7f050000;
+        public static final int ImageViewer=0x7f050002;
         public static final int btn_AddCard=0x7f050007;
         public static final int btn_CloseViewer=0x7f050009;
         public static final int btn_Create=0x7f050010;
         public static final int btn_Delete=0x7f050006;
         public static final int btn_Login=0x7f050012;
-        public static final int btn_Save=0x7f050002;
-        public static final int edit_Name=0x7f050001;
+        public static final int btn_Save=0x7f050001;
+        public static final int edit_Name=0x7f050000;
         public static final int edit_Password=0x7f050011;
         public static final int edit_Password_C=0x7f05000d;
         public static final int edit_Password_C_Re=0x7f05000f;

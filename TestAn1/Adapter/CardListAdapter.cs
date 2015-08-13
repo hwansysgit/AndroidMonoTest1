@@ -64,7 +64,10 @@ namespace TestAn1
                 var editName = cViwe.FindViewById<TextView>(Resource.Id.text_CardName);
                 editName.Text = cardList[position].NAME;
                 var editDate = cViwe.FindViewById<TextView>(Resource.Id.text_RegDate);
-                editDate.Text = cardList[position].REGDATE;                
+                editDate.Text = cardList[position].REGDATE;
+                var btnDelete = cViwe.FindViewById<Button>(Resource.Id.btn_Delete);
+                btnDelete.Click += BtnDelete_Click;
+                cViwe.Click += CViwe_Click;             
 
             }
             catch (Exception e)
@@ -75,6 +78,22 @@ namespace TestAn1
             return cViwe;
 
         }
-        
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;            
+            Toast.MakeText(context, btn.Text , ToastLength.Short).Show();
+        }
+
+        private void CViwe_Click(object sender, EventArgs e)
+        {
+            View cView = sender as View;
+            string selectedName = cView.FindViewById<TextView>(Resource.Id.text_CardName).Text;
+            byte[] image = DataBaseController.instance().GetCardImage(selectedName);
+
+            Intent cardViewIntent = new Intent(context, typeof(CardViewerActivity));
+            cardViewIntent.PutExtra("ImageData", image);
+            context.StartActivity(cardViewIntent);
+        }
     }
 }

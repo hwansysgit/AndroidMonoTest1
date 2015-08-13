@@ -15,5 +15,6 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/grid_CardList" />
+        android:id="@+id/grid_CardList"
+        android:clickable="true" />
 </LinearLayout>

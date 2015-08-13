@@ -34,9 +34,11 @@ namespace TestAn1
         {
             base.OnPostCreate(savedInstanceState);
             cardViwer = FindViewById<GridView>(Resource.Id.grid_CardList);
+            cardViwer.Clickable = true;
+            
             btn_AddCard = FindViewById<Button>(Resource.Id.btn_AddCard);
             btn_AddCard.Click += Btn_AddCard_Click;
-            cardViwer.ItemClick += CardViwer_ItemClick;
+                     
             GetList();
 
         }
@@ -48,6 +50,7 @@ namespace TestAn1
 
             Intent cardViewIntent = new Intent(this, typeof(CardViewerActivity));
             cardViewIntent.PutExtra("ImageData", image);
+            cardViewIntent.PutExtra("ImageName", selectedName);            
             StartActivity(cardViewIntent);
         }
 
@@ -72,7 +75,8 @@ namespace TestAn1
         {
             cardList = DataBaseController.instance().GetCardList();
             CardListAdapter adapter = new CardListAdapter(this, cardList);
-            cardViwer.Adapter = adapter;
+            cardViwer.Adapter = adapter;            
+            
         }
     }
 }
