@@ -2,6 +2,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace TestAn1
 {
@@ -93,6 +94,14 @@ namespace TestAn1
             }
 
             return cList;
+        }
+
+        public byte[] GetCardImage(string name)
+        {
+            var cardImage = from c in conn.Table<Cards>() where c.NAME == name select c;
+
+            Cards mCard = cardImage.FirstOrDefault();
+            return Enumerable.Range(0, mCard.IMAGE.Length).Where(x => x % 2 == 0).Select(x => Convert.ToByte(mCard.IMAGE.Substring(x, 2), 16)).ToArray();
         }
     }
 
