@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="TestAn1.TestAn1" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="11" />
+  <application android:label="TestAn1" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:label="CardListViewActivity" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.CardListViewActivity" />
+    <activity android:label="CreateAccountActivity" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.CreateAccountActivity" />
+    <activity android:label="Secret Card Manager" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="TakePictureActivity" android:name="md50a88cf89e12d6f205bcda4a22bce17c5.TakePictureActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="TestAn1.TestAn1.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.TestAn1.TestAn1" />
+      </intent-filter>
+    </receiver>
+  </application>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+  <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
