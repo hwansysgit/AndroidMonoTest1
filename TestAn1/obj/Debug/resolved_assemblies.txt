@@ -1,8 +1,8 @@
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\TestAn1.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\Mono.Android.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\mscorlib.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\SQLite.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\System.Core.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\System.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\System.Xml.dll
-D:\Study\android\TestAn1\TestAn1\obj\Debug\assemblies\System.Xml.Linq.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\TestAn1.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\Mono.Android.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\mscorlib.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\SQLite.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\System.Core.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\System.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\System.Xml.dll
+D:\Study\android\AndroidMonoTest1\TestAn1\obj\Debug\assemblies\System.Xml.Linq.dll
