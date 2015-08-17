@@ -62,29 +62,29 @@ namespace TestAn1
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f05000b
+			public const int CardImageViewer = 2131034123;
+			
+			// aapt resource value: 0x7f050003
+			public const int ImageViewer = 2131034115;
+			
+			// aapt resource value: 0x7f050008
+			public const int btn_AddCard = 2131034120;
+			
 			// aapt resource value: 0x7f05000a
-			public const int CardImageViewer = 2131034122;
-			
-			// aapt resource value: 0x7f050002
-			public const int ImageViewer = 2131034114;
-			
-			// aapt resource value: 0x7f050007
-			public const int btn_AddCard = 2131034119;
-			
-			// aapt resource value: 0x7f050009
-			public const int btn_CloseViewer = 2131034121;
+			public const int btn_CloseViewer = 2131034122;
 			
 			// aapt resource value: 0x7f050010
 			public const int btn_Create = 2131034128;
 			
-			// aapt resource value: 0x7f050006
-			public const int btn_Delete = 2131034118;
+			// aapt resource value: 0x7f050007
+			public const int btn_Delete = 2131034119;
 			
 			// aapt resource value: 0x7f050012
 			public const int btn_Login = 2131034130;
 			
-			// aapt resource value: 0x7f050001
-			public const int btn_Save = 2131034113;
+			// aapt resource value: 0x7f050002
+			public const int btn_Save = 2131034114;
 			
 			// aapt resource value: 0x7f050000
 			public const int edit_Name = 2131034112;
@@ -98,14 +98,14 @@ namespace TestAn1
 			// aapt resource value: 0x7f05000f
 			public const int edit_Password_C_Re = 2131034127;
 			
-			// aapt resource value: 0x7f050008
-			public const int grid_CardList = 2131034120;
+			// aapt resource value: 0x7f050009
+			public const int grid_CardList = 2131034121;
 			
-			// aapt resource value: 0x7f050003
-			public const int linearLayout1 = 2131034115;
+			// aapt resource value: 0x7f050004
+			public const int linearLayout1 = 2131034116;
 			
-			// aapt resource value: 0x7f05000b
-			public const int textView1 = 2131034123;
+			// aapt resource value: 0x7f050001
+			public const int textView1 = 2131034113;
 			
 			// aapt resource value: 0x7f05000c
 			public const int textView2 = 2131034124;
@@ -113,11 +113,11 @@ namespace TestAn1
 			// aapt resource value: 0x7f05000e
 			public const int textView3 = 2131034126;
 			
-			// aapt resource value: 0x7f050005
-			public const int text_CardName = 2131034117;
+			// aapt resource value: 0x7f050006
+			public const int text_CardName = 2131034118;
 			
-			// aapt resource value: 0x7f050004
-			public const int text_RegDate = 2131034116;
+			// aapt resource value: 0x7f050005
+			public const int text_RegDate = 2131034117;
 			
 			static Id()
 			{

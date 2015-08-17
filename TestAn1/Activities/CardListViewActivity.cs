@@ -33,7 +33,7 @@ namespace TestAn1
         protected override void OnPostCreate(Bundle savedInstanceState)
         {
             base.OnPostCreate(savedInstanceState);
-            cardViwer = FindViewById<GridView>(Resource.Id.grid_CardList);
+            cardViwer = FindViewById<GridView>(Resource.Id.grid_CardList);           
             cardViwer.Clickable = true;
             
             btn_AddCard = FindViewById<Button>(Resource.Id.btn_AddCard);
@@ -75,8 +75,14 @@ namespace TestAn1
         {
             cardList = DataBaseController.instance().GetCardList();
             CardListAdapter adapter = new CardListAdapter(this, cardList);
+            adapter.dataRemoved += Adapter_dataRemoved;
             cardViwer.Adapter = adapter;            
             
+        }
+
+        private void Adapter_dataRemoved(object sender, EventArgs e)
+        {
+            GetList();
         }
     }
 }

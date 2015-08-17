@@ -82,11 +82,10 @@ namespace TestAn1
                     using (MemoryStream stream = new MemoryStream())
                     {
                         bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
-                        bitmapData = stream.ToArray();
+                        bitmapData = stream.ToArray();                        
                     }
 
-                    //이미지 지워야함...
-                    
+                                       
                     picture.SetImageBitmap(bitmap);
                     bitmap.Dispose();
                 }

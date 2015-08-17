@@ -9,6 +9,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/edit_Name"
         android:hint="Enter Name" />
+    <TextView
+        android:text="저장된 사진은 꼭 지워주세요."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textColor="@android:color/holo_red_light"
+        android:gravity="center" />
     <Button
         android:text="Save"
         android:layout_width="match_parent"

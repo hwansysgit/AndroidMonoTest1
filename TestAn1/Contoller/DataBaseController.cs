@@ -103,6 +103,19 @@ namespace TestAn1
             Cards mCard = cardImage.FirstOrDefault();
             return Enumerable.Range(0, mCard.IMAGE.Length).Where(x => x % 2 == 0).Select(x => Convert.ToByte(mCard.IMAGE.Substring(x, 2), 16)).ToArray();
         }
+
+        public int DeleteCardInfo(string name)
+        {
+            var cardID = from c in conn.Table<Cards>() where c.NAME == name select c;
+            Cards cardData = cardID.FirstOrDefault();
+            if (cardData != null)
+            {
+                int deletedCount = conn.Delete<Cards>(cardData.ID);
+                return deletedCount;
+            }
+            else
+                return 0;
+        }
     }
 
     [Table("Users")]

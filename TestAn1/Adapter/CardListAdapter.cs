@@ -15,9 +15,8 @@ namespace TestAn1
     class CardListAdapter : BaseAdapter<Cards>
     {
         private readonly Context context;
-        LayoutInflater inflater;
         List<Cards> cardList;
-
+        public event EventHandler dataRemoved;
         public override int Count
         {
             get
@@ -65,6 +64,7 @@ namespace TestAn1
                 editName.Text = cardList[position].NAME;
                 var editDate = cViwe.FindViewById<TextView>(Resource.Id.text_RegDate);
                 editDate.Text = cardList[position].REGDATE;
+                
                 var btnDelete = cViwe.FindViewById<Button>(Resource.Id.btn_Delete);
                 btnDelete.Click += BtnDelete_Click;
                 cViwe.Click += CViwe_Click;             
@@ -81,8 +81,16 @@ namespace TestAn1
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            Button btn = sender as Button;            
-            Toast.MakeText(context, btn.Text , ToastLength.Short).Show();
+            Button btn = sender as Button;
+            View v = btn.Parent as View;
+            var editName = v.FindViewById<TextView>(Resource.Id.text_CardName);
+            int result = DataBaseController.instance().DeleteCardInfo(editName.Text);
+            if(result > 0)
+            {
+                if(dataRemoved != null)
+                { dataRemoved(null, null); }
+            }
+
         }
 
         private void CViwe_Click(object sender, EventArgs e)
